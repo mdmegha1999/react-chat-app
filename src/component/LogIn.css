@@ -1,0 +1,117 @@
+/* Add this to your LogIn.css */
+
+.show-password-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* color: #d25858; */
+    /* transition: color 0.3s ease-in-out; */
+  }
+  
+  .show-password-button:hover {
+    /* color: #555; */
+  }
+  
+  /* Password input container */
+  .password-input-container {
+    position: relative;
+  }
+  
+  /* Password show/hide button animation */
+  .password-input-container .show-password-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .password-input-container .show-password-button.show::before {
+    /* transform: translateY(-50%) rotate(45deg); */
+    /* background-color: #333; */
+  }
+
+  /* LogIn.css */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .password-input-container {
+    position: relative;
+  }
+  
+  .show-password-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #eaeaea;
+    /* align-items: center; */
+    top: 20px;
+  }
+  
+  .show-password-button.show {
+    color: #007bff;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+  
